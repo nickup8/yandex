@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'YS Text';
+	src: './../font/text-regular.woff';
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'YS Text';
+	src: './../font/text-medium.woff';
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'YS Text';
+	src: './../font/text-black.woff';
+	font-weight: 900;
+}
