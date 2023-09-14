@@ -108,14 +108,34 @@ if (ScrollTrigger.isTouch !== 1) {
 			opacity: 1,
 			scrollTrigger: {
 				trigger: '.cta_text_top',
-				start: 'center center',
-				end: 'top top',
+				start: 'bottom center',
+				end: 'bottom top',
 				scrub: true,
 			},
 		}
 	);
-
-	let windowWith = window.outerWidth;
-	if (windowWith < 576) {
-	}
 }
+
+const slider = document.getElementById('slider');
+
+window.onresize = () => {
+	if (innerWidth < 768) {
+		slider.classList.remove('events_content');
+		slider.classList.add('swiper-wrapper');
+		new Swiper('.mobile_slider', {
+			// Optional parameters
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.next_el',
+				prevEl: '.prev_el',
+			},
+		});
+	} else {
+		slider.classList.remove('swiper-wrapper');
+		slider.classList.add('events_content');
+	}
+};
+
+window.onresize();
+
+console.log();

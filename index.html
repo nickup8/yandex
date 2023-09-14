@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./libs/swiper/swiper.min.css" />
+		<link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 
 		<title>Яндекс Самокат</title>
@@ -11,9 +12,8 @@
 		<script src="./libs/gsap/gsap.min.js" defer></script>
 		<script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
 		<script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
-		<script src="./libs/swiper/swiper.min.js" defer></script>
-			<script src="./js/app.js" defer></script>
-		</script>
+		<script src="./libs/swiper/swiper-bundle.min.js" defer></script>
+		<script src="./js/app.js" defer></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -109,35 +109,53 @@
 							с Антохой MC, катались на самокатах с Сергеем Мезенцевым и слушали
 							хор Attaque de Panique
 						</p>
-						<div class="events_content">
-							<img
-								class="events_content_item"
-								src="./img/3_1.jpg"
-								alt="Антоха МС"
-							/>
-							<img
-								class="events_content_item"
-								src="./img/3_2.jpg"
-								alt="Антоха МС"
-							/>
-							<img
-								class="events_content_item"
-								src="./img/3_3.jpg"
-								alt="Антоха МС"
-							/>
-							<img
-								class="events_content_item"
-								src="./img/3_4.jpg"
-								alt="Антоха МС"
-							/>
-							<div class="events_icons">
-								<img class="smk_icon" src="./img/smkt00082.png" alt="Самокат" />
-								<img class="event_icon" src="./img/cfee0016.png" alt="Пузыри" />
-								<img
-									class="glass_icon"
-									src="./img/smkt00106.png"
-									alt="Пузыри"
-								/>
+						<div class="swiper mobile_slider">
+							<div id="slider" class="events_content">
+								<div class="events_content_item swiper-slide">
+									<img src="./img/3_1.jpg" alt="Антоха МС" />
+								</div>
+
+								<div class="events_content_item swiper-slide">
+									<img src="./img/3_2.jpg" alt="Антоха МС" />
+								</div>
+
+								<div class="events_content_item swiper-slide">
+									<img src="./img/3_3.jpg" alt="Антоха МС" />
+								</div>
+
+								<div class="events_content_item swiper-slide">
+									<img src="./img/3_4.jpg" alt="Антоха МС" />
+								</div>
+
+								<div class="events_icons">
+									<img
+										class="smk_icon"
+										src="./img/smkt00082.png"
+										alt="Самокат"
+									/>
+									<img
+										class="event_icon"
+										src="./img/cfee0016.png"
+										alt="Пузыри"
+									/>
+									<img
+										class="glass_icon"
+										src="./img/smkt00106.png"
+										alt="Пузыри"
+									/>
+								</div>
+							</div>
+							<div class="navigation_slider">
+								<div class="prevEl">
+									<button class="slider_nav prev_el">
+										<img src="./img/arrowleft.svg" alt="Arrow_left" />
+									</button>
+								</div>
+								<div class="nextEl">
+									<button class="slider_nav next_el">
+										<img src="./img/arrow.svg" alt="Arrow_right" />
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -151,7 +169,7 @@
 									Купить абонемент и&nbsp;вступить в&nbsp;клуб смогут
 									те,&nbsp;кто в Плюсе
 								</h3>
-								<p>
+								<p class="cta_description">
 									За каждую поездку на самокатах такие пользователи получают
 									кешбэк&nbsp;баллами. Баллы можно тратить на поездки на
 									самокатах и&nbsp;такси с Яндекс Go, покупки и заказы в других
@@ -162,24 +180,26 @@
 								<img src="./img/2087325536.png" alt="Самокат" />
 							</div>
 							<div class="cta_img cta_img_bottom" data-speed="0.6">
-								<div class="cta_img_bg"></div>
-								<img
-									class="cta_image"
-									src="./img/smkt0013.png"
-									alt="header img"
-								/>
-								<img
-									class="text_rotate"
-									src="./img/Text.png"
-									alt="header img"
-								/>
+								<div class="img_cta">
+									<div class="cta_img_bg"></div>
+									<img
+										class="cta_image"
+										src="./img/smkt0013.png"
+										alt="header img"
+									/>
+									<img
+										class="text_rotate"
+										src="./img/Text.png"
+										alt="header img"
+									/>
+								</div>
 							</div>
 							<div class="cta_text cta_text_bottom" data-speed="0.8">
 								<h3 class="cta_title">
 									80% наших пользователей уже в клубе и&nbsp;экономят
 									на&nbsp;поездках
 								</h3>
-								<p>
+								<p class="cta_description">
 									Присоединяйтесь — опция начнёт действовать в начале
 									сезона–2024. Об&nbsp;открытии сезона предупредим заранее,
 									чтобы вы были готовы
