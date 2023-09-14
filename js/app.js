@@ -137,5 +137,3 @@ window.onresize = () => {
 };
 
 window.onresize();
-
-console.log();
