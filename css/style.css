@@ -34,6 +34,7 @@ body {
 	overflow-x: hidden;
 	line-height: 1.2;
 	color: var(--text);
+	position: relative;
 }
 
 h1,
@@ -415,8 +416,11 @@ h3 {
 
 	.head_button {
 		position: fixed;
-		left: 0;
-		display: none;
+		width: 310px;
+		height: 49px;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 24px;
 		z-index: 10;
 	}
 
