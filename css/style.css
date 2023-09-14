@@ -492,17 +492,15 @@ h3 {
 	.cta_img_bottom {
 		display: block;
 	}
-	.cta_image {
-		width: 230px;
-		top: 50%;
-	}
 	.cta_title {
 		font-size: 32px;
 		width: 100%;
 	}
 
 	.text_rotate {
-		top: 0;
+		top: 20px;
+		left: 20px;
+		width: 270px;
 	}
 
 	.cta_description {
@@ -512,6 +510,18 @@ h3 {
 		width: 250px;
 		height: 250px;
 		display: none;
+	}
+
+	.img_cta {
+		width: 300px;
+		position: relative;
+		height: 300px;
+		padding: 10px;
+		overflow: hidden;
+	}
+
+	.cta_image {
+		width: 200px;
 	}
 
 	.footer {
