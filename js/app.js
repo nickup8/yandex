@@ -117,9 +117,11 @@ if (ScrollTrigger.isTouch !== 1) {
 }
 
 const slider = document.getElementById('slider');
+const button = document.querySelector('.head_button');
 
 window.onresize = () => {
 	if (innerWidth < 768) {
+		document.body.prepend(button);
 		slider.classList.remove('events_content');
 		slider.classList.add('swiper-wrapper');
 		new Swiper('.mobile_slider', {
@@ -131,6 +133,7 @@ window.onresize = () => {
 			},
 		});
 	} else {
+		document.querySelector('.head_content').append(button);
 		slider.classList.remove('swiper-wrapper');
 		slider.classList.add('events_content');
 	}
